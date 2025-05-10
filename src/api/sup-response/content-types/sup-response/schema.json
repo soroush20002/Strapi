@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sup_responses",
+  "info": {
+    "singularName": "sup-response",
+    "pluralName": "sup-responses",
+    "displayName": "sup-response",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "rText": {
+      "type": "text"
+    },
+    "ui": {
+      "type": "integer"
+    }
+  }
+}

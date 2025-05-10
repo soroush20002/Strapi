@@ -1,0 +1,15 @@
+{
+    "platform": "node",
+    "app": "agri",
+    "port": 1337,
+    "disks": [
+        {
+            "name": "data",
+            "mountTo": "public/uploads"
+        },
+        {
+            "name": "tmp",
+            "mountTo": ".tmp"
+        }
+    ]
+} 

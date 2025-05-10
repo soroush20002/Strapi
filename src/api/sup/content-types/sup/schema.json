@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sups",
+  "info": {
+    "singularName": "sup",
+    "pluralName": "sups",
+    "displayName": "sup"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "uText": {
+      "type": "text"
+    },
+    "ui": {
+      "type": "integer"
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "sups"
+    }
+  }
+}
