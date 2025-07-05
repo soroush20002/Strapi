@@ -4,7 +4,8 @@
   "info": {
     "singularName": "user-cart",
     "pluralName": "user-carts",
-    "displayName": "User Cart"
+    "displayName": "User Cart",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -32,6 +33,9 @@
       "type": "string"
     },
     "ui": {
+      "type": "integer"
+    },
+    "weight": {
       "type": "integer"
     }
   }

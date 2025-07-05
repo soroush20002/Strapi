@@ -484,6 +484,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       'manyToMany',
       'api::user-cart.user-cart'
     >;
+    weight: Schema.Attribute.Integer;
   };
 }
 
@@ -584,6 +585,7 @@ export interface ApiSupSup extends Struct.CollectionTypeSchema {
 export interface ApiUserCartUserCart extends Struct.CollectionTypeSchema {
   collectionName: 'user_carts';
   info: {
+    description: '';
     displayName: 'User Cart';
     pluralName: 'user-carts';
     singularName: 'user-cart';
@@ -614,6 +616,7 @@ export interface ApiUserCartUserCart extends Struct.CollectionTypeSchema {
       'manyToMany',
       'plugin::users-permissions.user'
     >;
+    weight: Schema.Attribute.Integer;
   };
 }
 

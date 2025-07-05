@@ -54,6 +54,9 @@
       "relation": "manyToMany",
       "target": "api::user-cart.user-cart",
       "mappedBy": "products"
+    },
+    "weight": {
+      "type": "integer"
     }
   }
 }
