@@ -39,6 +39,9 @@
       "type": "component",
       "repeatable": true,
       "component": "ordered-item.ordered-item"
+    },
+    "authority": {
+      "type": "string"
     }
   }
 }
