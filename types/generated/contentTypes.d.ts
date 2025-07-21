@@ -538,6 +538,10 @@ export interface ApiSupResponseSupResponse extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -556,6 +560,7 @@ export interface ApiSupResponseSupResponse extends Struct.CollectionTypeSchema {
 export interface ApiSupSup extends Struct.CollectionTypeSchema {
   collectionName: 'sups';
   info: {
+    description: '';
     displayName: 'sup';
     pluralName: 'sups';
     singularName: 'sup';
@@ -567,6 +572,10 @@ export interface ApiSupSup extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::sup.sup'> &
       Schema.Attribute.Private;

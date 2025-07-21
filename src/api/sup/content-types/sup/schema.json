@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sup",
     "pluralName": "sups",
-    "displayName": "sup"
+    "displayName": "sup",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,6 +22,16 @@
       "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
       "inversedBy": "sups"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
