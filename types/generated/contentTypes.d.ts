@@ -461,6 +461,8 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
+    forThisSession: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
     images: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
@@ -485,6 +487,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       'manyToMany',
       'api::user-cart.user-cart'
     >;
+    vitrin: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     weight: Schema.Attribute.Integer;
   };
 }

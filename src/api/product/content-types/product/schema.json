@@ -57,6 +57,14 @@
     },
     "weight": {
       "type": "integer"
+    },
+    "forThisSession": {
+      "type": "boolean",
+      "default": false
+    },
+    "vitrin": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
