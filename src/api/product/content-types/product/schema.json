@@ -65,6 +65,11 @@
     "vitrin": {
       "type": "boolean",
       "default": false
+    },
+    "productInfo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product-info.product-info"
     }
   }
 }

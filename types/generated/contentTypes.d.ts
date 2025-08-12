@@ -477,6 +477,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     mrp: Schema.Attribute.Integer;
     name: Schema.Attribute.String;
     namefa: Schema.Attribute.String;
+    productInfo: Schema.Attribute.Component<'product-info.product-info', true>;
     publishedAt: Schema.Attribute.DateTime;
     sellingPrice: Schema.Attribute.Integer;
     slug: Schema.Attribute.UID;
